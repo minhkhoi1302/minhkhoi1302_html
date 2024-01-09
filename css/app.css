@@ -1,0 +1,21 @@
+body{
+    background-image: url('../images/nhu-o-ng-6505-1704530780.jpg');
+    background-size: cover;
+}
+h1{
+    color: rgb(1,52,123)
+}
+p{
+    color: yellow;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* justify left center right*/
+    text-decoration: none;  /* overline line-through underline*/
+    text-transform: none; /* lowercase uppercase capitalize */
+    font-weight: 400;
+    /* 100-thin 200-semi-light 300-light 400-normal 500-medium 600-semibold 700-bold 800-extrabold 900-black */
+    /*background-color: red;*/
+    width: 600px;
+    border-bottom: 10px solid lightgreen ;
+}
