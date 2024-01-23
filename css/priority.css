@@ -1,0 +1,22 @@
+#ph{
+    color: red;
+}
+body .box .grah{
+
+}
+.box > .grah{
+    
+}
+.box .grah{
+    color: blue;
+
+}
+.grah{
+    color: pink;
+}
+p{
+    color: black !important; 
+}
+p{
+    color: green;
+}

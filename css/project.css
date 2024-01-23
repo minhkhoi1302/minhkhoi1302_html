@@ -1,0 +1,13 @@
+div:hover{
+    transition: all 250ms;
+    transform: scale(1.5);
+    color: red;
+}
+div{
+    float: center;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 8px black;
+    padding: 2px;
+}
