@@ -2,10 +2,10 @@
     color: red;
 }
 body .box .grah{
-
+color: red;
 }
 .box > .grah{
-     
+    color: red;
 }
 .box .grah{
     color: blue;
