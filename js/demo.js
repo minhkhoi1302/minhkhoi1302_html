@@ -80,3 +80,30 @@ if(may == rd){
 }else{
     alert("ban ko phai la nguoi may man");
 }
+
+// tao 1 bo 23 so (0-99)
+// nguoi choi se chon 1 so moi lan ( toi da 7 lan choi ) va so tien dat
+// cuoc cua ngay hom do. (gia su ti le 23d 1 diem -> trung 1 so thi dc 80d)
+// sau 7 ngay hay tinh so tien da bo va so tien thu duoc
+
+var st = 0;
+var dt = 0;
+for(var i=1;i<=7;i++){
+    var kq = [];
+    for(var j=0;j<23;j++){
+        var rd = Math.random() * 100;
+        rd = parseInt(rd);
+        kq.push(rd);
+    }
+    var lc = prompt(`nhap so muon dat hom nay (ngay thu ${i}):`);
+    lc = parseInt(lc);
+    var td = prompt(`nhap so tien muon dat cua ngay hom nay(ngay thu ${i}):`);
+    td = parseInt(td);
+    st+= td;
+    kq.forEach(e=>{
+        if(e==lc){
+            dt+= (td/23)*80;
+        }
+    })
+}
+alert(`tong tien ban dau: ${st} va so tien thu dc: ${td}:`);
