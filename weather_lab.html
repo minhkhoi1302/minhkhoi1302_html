@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grid.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <ul id="grid">
+                <li> nhiet do: <span id="temp"></span><sup>o</sup>C</li>
+                <li>do am: <span id="humidity"></span>%</li>
+                <li>ap suat: <span id="pressure"></span></li>
+            </ul>
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+            var url = `https://api.openweathermap.org/data/2.5/forecast?q=Hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
+            fetch(url).then(js=>js.json())
+            .then(data=>{
+                // step 2
+                document.getElementById("temp").innerText = data.main.temp;
+                document.getElementById("humidity").innerText = data.humidity;
+                document.getElementById("pressure").innerText = data.main.pressure;
+            })
+        
+    </script>
+</body>
+</html>
